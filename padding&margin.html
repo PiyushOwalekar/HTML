@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>padding & margin</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #000000;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 60px;
+    padding: 20px;
+    background: #93ebff;
+    border: 1px solid #fcfcfc;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.demo {
+    background: #dfe6e9;
+    border: 2px solid black;
+    margin-bottom: 20px;
+}
+
+.padding-20 { padding: 20px; }
+.padding-40 { padding: 40px; }
+.padding-80 { padding: 80px; }
+
+.margin-40 { margin: 40px; }
+
+.bg-color { background: #74b9ff; }
+
+.shorthand {
+    padding: 10px 50px 30px 70px;
+    margin: 60px 20px;
+}
+
+.negative-margin {
+    margin: -20px;
+}
+
+.box1 { margin-bottom: 50px; background: #fab1a0; }
+.box2 { margin-top: 30px; background: #81ecec; }
+
+.box-padding {
+    padding-bottom: 50px;
+    padding-top: 30px;
+}
+
+.inline-demo span {
+    margin: 20px;
+    padding: 20px;
+    background: #ffeaa7;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.flex-container {
+    display: flex;
+    border: 2px dashed #2d3436;
+    padding: 10px;
+}
+
+.flex-item {
+    background: #a29bfe;
+    padding: 20px;
+    margin: 10px;
+}
+
+.flex-gap {
+    display: flex;
+    gap: 20px;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.align-center {
+    align-items: center;
+    height: 150px;
+}
+
+.auto-margin {
+    margin-left: auto;
+}
+
+button {
+    padding: 15px 30px;
+    margin: 20px;
+    font-size: 16px;
+}
+
+.card-container {
+    display: flex;
+    gap: 30px;
+}
+
+.card {
+    width: 250px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    background: #ffffff;
+}
+
+.card img {
+    width: 100%;
+}
+
+.box-a {
+    width: 150px;
+    height: 150px;
+    padding: 40px;
+    background: #55efc4;
+}
+
+.box-b {
+    width: 150px;
+    height: 150px;
+    margin: 40px;
+    background: #ff7675;
+}
+
+.overflow-container {
+    display: flex;
+    width: 300px;
+    border: 2px solid black;
+}
+
+.overflow-item {
+    width: 150px;
+    padding: 40px;
+    background: #fdcb6e;
+    box-sizing: border-box;
+}
+
+.center-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    border: 2px dashed black;
+}
+</style>
+</head>
+<body>
+
+<section>
+<h2>Task 1: Padding Growth</h2>
+<div class="demo padding-20">Padding 20px</div>
+<div class="demo padding-40">Padding 40px</div>
+<div class="demo padding-80">Padding 80px</div>
+</section>
+
+<section>
+<h2>Task 2: Margin Space</h2>
+<div class="demo margin-40 bg-color">Margin 40px</div>
+</section>
+
+<section>
+<h2>Task 3: Padding vs Margin Background</h2>
+<div class="demo padding-40 bg-color">Padding visible</div>
+<div class="demo margin-40 bg-color">Margin invisible</div>
+</section>
+
+<section>
+<h2>Task 4: Shorthand Spacing</h2>
+<div class="demo shorthand">Shorthand applied</div>
+</section>
+
+<section>
+<h2>Task 5: Negative Values</h2>
+<div class="demo negative-margin">Negative margin</div>
+</section>
+
+<section>
+<h2>Task 6: Margin Collapse</h2>
+<div class="demo box1">Box 1</div>
+<div class="demo box2">Box 2</div>
+</section>
+
+<section>
+<h2>Task 7: Inline vs Inline-block</h2>
+<div class="inline-demo">
+    <span>Inline span</span>
+    <span class="inline-block">Inline-block span</span>
+</div>
+</section>
+
+<section>
+<h2>Task 8–11: Flexbox Basics</h2>
+<div class="flex-container">
+    <div class="flex-item">One</div>
+    <div class="flex-item">Two</div>
+    <div class="flex-item">Three</div>
+</div>
+<br>
+<div class="flex-container flex-column">
+    <div class="flex-item">Column One</div>
+    <div class="flex-item">Column Two</div>
+</div>
+</section>
+
+<section>
+<h2>Task 12–14: Flex Alignment</h2>
+<div class="flex-container space-between align-center">
+    <div class="flex-item">Left</div>
+    <div class="flex-item auto-margin">Right</div>
+</div>
+</section>
+
+<section>
+<h2>Task 15: Button Padding vs Margin</h2>
+<button>Click Me</button>
+</section>
+
+<section>
+<h2>Task 16: Card Component</h2>
+<div class="card-container">
+    <div class="card">
+        <img src="https://i.pinimg.com/1200x/0c/ba/c4/0cbac4fbac554bbf61522074abdf33bd.jpg" alt="">
+        <h3>Cat</h3>
+        <p>Sung jinwoo cat</p>
+        <button>Action</button>
+    </div>
+    <div class="card">
+        <img src="https://i.pinimg.com/1200x/3c/85/d7/3c85d76ead9150f989ee9e955507fc32.jpg" alt="">
+        <h3>Dog</h3>
+        <p>Goku dog</p>
+        <button>Action</button>
+    </div>
+</div>
+</section>
+
+<section>
+<h2>Task 17: Box Size Illusion</h2>
+<div class="box-a">Padding Box</div>
+<div class="box-b">Margin Box</div>
+</section>
+
+<section>
+<h2>Task 18: Box-sizing Fix</h2>
+<div class="overflow-container">
+    <div class="overflow-item">No overflow</div>
+    <div class="overflow-item">No overflow</div>
+</div>
+</section>
+
+<section>
+<h2>Task 19: Vertical Centering</h2>
+<div class="center-flex">
+    <div class="demo">Centered</div>
+</div>
+</section>
+
+</body>
+</html>
